@@ -1,0 +1,8 @@
+{
+  "name": "parislash-midtown",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Paris Lash Midtown Reno — static website with a Vercel contact function",
+  "scripts": { "dev": "npx serve ." },
+  "engines": { "node": ">=18" }
+}

@@ -1,0 +1,19 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/service", "destination": "/", "permanent": true },
+    { "source": "/service/", "destination": "/", "permanent": true },
+    { "source": "/eyelash-extensions/", "destination": "/eyelash-extensions", "permanent": true },
+    { "source": "/waxing/", "destination": "/waxing", "permanent": true },
+    { "source": "/eyebrow", "destination": "/eyebrows", "permanent": true },
+    { "source": "/eyebrow/", "destination": "/eyebrows", "permanent": true },
+    { "source": "/about-us", "destination": "/about", "permanent": true },
+    { "source": "/about-us/", "destination": "/about", "permanent": true },
+    { "source": "/schedule-an-appointment", "destination": "/contact", "permanent": true },
+    { "source": "/schedule-an-appointment/", "destination": "/contact", "permanent": true }
+  ],
+  "headers": [
+    { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] }
+  ]
+}

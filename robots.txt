@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://parislashmidtownreno.com/sitemap.xml
