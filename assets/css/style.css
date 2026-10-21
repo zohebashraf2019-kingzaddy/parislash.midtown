@@ -267,8 +267,8 @@ section { position: relative; }
 /* ---------- Reveal animations ---------- */
 .reveal { opacity: 0; transform: translateY(40px); transition: opacity 1.1s var(--ease), transform 1.1s var(--ease); }
 .reveal.in { opacity: 1; transform: none; }
-.reveal-img { clip-path: inset(100% 0 0 0); transition: clip-path 1.3s var(--ease); }
-.reveal-img.in { clip-path: inset(0 0 0 0); }
+.reveal-img > * { clip-path: inset(100% 0 0 0); transition: clip-path 1.3s var(--ease); }
+.reveal-img.in > * { clip-path: inset(0 0 0 0); }
 .reveal-img img { transform: scale(1.25); transition: transform 1.8s var(--ease); }
 .reveal-img.in img { transform: scale(1); }
 .split .w { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: .08em; margin-bottom: -.08em; }
@@ -577,7 +577,7 @@ section { position: relative; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
   .reveal, .split .w > span { opacity: 1; transform: none; }
-  .reveal-img { clip-path: none; }
+  .reveal-img > * { clip-path: none; }
 }
 .page-hero__img { position: relative; }
 .page-hero__img .reel__cap { color: #fff; }
