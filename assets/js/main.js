@@ -186,7 +186,7 @@
         const a = (Math.sin(t / 600 + pt.p) + 1) / 2;
         const x = pt.x * W, y = pt.y * H, r = pt.r * devicePixelRatio;
         ctx.globalAlpha = a * .9;
-        ctx.fillStyle = pt.r > 1.4 ? "#ff4fb0" : "#ffffff";
+        ctx.fillStyle = pt.r > 1.4 ? "#e3a1bf" : "#ffffff";
         ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fill();
         if (pt.r > 1.5) { ctx.globalAlpha = a * .5; ctx.fillRect(x - r * 4, y - .5, r * 8, 1); ctx.fillRect(x - .5, y - r * 4, 1, r * 8); }
       });

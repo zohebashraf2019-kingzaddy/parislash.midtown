@@ -50,12 +50,12 @@ module.exports = async (req, res) => {
     .filter(([, v]) => String(v).trim())
     .map(
       ([k, v]) =>
-        `<tr><td style="padding:8px 14px 8px 0;color:#b80f68;font:600 12px Arial;letter-spacing:.08em;text-transform:uppercase;vertical-align:top">${k}</td><td style="padding:8px 0;font:15px Arial;color:#241d22;white-space:pre-wrap">${esc(v)}</td></tr>`
+        `<tr><td style="padding:8px 14px 8px 0;color:#9c4470;font:600 12px Arial;letter-spacing:.08em;text-transform:uppercase;vertical-align:top">${k}</td><td style="padding:8px 0;font:15px Arial;color:#241d22;white-space:pre-wrap">${esc(v)}</td></tr>`
     )
     .join("");
 
   const html = `<div style="max-width:560px;margin:auto;font-family:Arial">
-    <div style="background:#0b0a0c;color:#ec1c8c;padding:22px 26px;border-radius:14px 14px 0 0;font:24px Georgia">Paris Lash · New request</div>
+    <div style="background:#0b0a0c;color:#c9578b;padding:22px 26px;border-radius:14px 14px 0 0;font:24px Georgia">Paris Lash · New request</div>
     <div style="border:1px solid #f3d3e4;border-top:0;padding:20px 26px;border-radius:0 0 14px 14px"><table>${rows}</table></div>
   </div>`;
 
